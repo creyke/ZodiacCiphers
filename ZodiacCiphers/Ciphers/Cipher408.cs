@@ -12,7 +12,7 @@
             {
                 // vallejo times-herald.
                 { S.TriangleEmpty, S.SquareOpenTopLeft, S.P, S.ForwardSlash, S.Z, S.ForwardSlash, S.U, S.B, S.SquareOpenTopLeft, S.KBackwards, S.O, S.R, S.Pi, S.PBackwards, S.X, S.Pi, S.B },
-                { S.W, S.ArrowDown, S.Plus, S.EBackwards, S.G, S.Y, S.F, S.Target, S.TriangleEmpty, S.H, S.P, S.SquareTarget, S.K, S.DogNose, S.QBackwards, S.Y, S.EBackwards },
+                { S.W, S.ArrowDown, S.Plus, S.EBackwards, S.G, S.Y, S.F, S.CircleTarget, S.TriangleEmpty, S.H, S.P, S.SquareTarget, S.K, S.DogNose, S.QBackwards, S.Y, S.EBackwards },
                 { S.M, S.J, S.Y, S.ArrowUp, S.U, S.I, S.KBackwards, S.TriangleTarget, S.QBackwards, S.T, S.TUpsideDown, S.N, S.Q, S.Y, S.D, S.CircleFilled, S.CircleLineHoriz },
                 { S.S, S.CircleLineVert, S.ForwardSlash, S.TriangleEmpty, S.SquareFilled, S.B, S.P, S.O, S.R, S.A, S.U, S.SquareOpenTopLeft, S.FBackwards, S.R, S.LBackwards, S.QBackwards, S.E },
                 { S.KBackwards, S.ArrowUp, S.L, S.M, S.Z, S.J, S.DBackwards, S.RBackwards, S.BackwardSlash, S.PBackwards, S.F, S.H, S.ArrowDown, S.W, S.EBackwards, S.TriangleFilled, S.Y },

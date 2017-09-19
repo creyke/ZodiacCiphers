@@ -1,25 +1,20 @@
-﻿namespace ZodiacCiphers.Ciphers
+﻿using System.Collections.Generic;
+
+namespace ZodiacCiphers.Ciphers
 {
-    public class Cipher13 : Cipher<Cipher13.S>
+    public class Cipher13 : HardcodedCipher<S>
     {
-        public override S[,] GetSymbols()
+        public override int[] WordTerminations => new int[]
+        {
+            0
+        };
+
+        protected override S[,] DefineSymbolGrid()
         {
             return new S[,]
             {
                 {S.A, S.E, S.N, S.Zodiac, S.Eight, S.K, S.Eight, S.M, S.Eight, S.TUpsideDown, S.N, S.A, S.M}
             };
-        }
-
-        public enum S
-        {
-            A,
-            E,
-            N,
-            Zodiac,
-            Eight,
-            K,
-            M,
-            TUpsideDown,
         }
     }
 }

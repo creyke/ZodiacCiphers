@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using Xunit;
+using ZodiacCiphers.Keys;
 
 namespace ZodiacCiphers.Ciphers.Tests
 {
@@ -8,8 +10,21 @@ namespace ZodiacCiphers.Ciphers.Tests
         public void CanCreate()
         {
             var cipher = new Cipher340();
+            var grid = cipher.Symbols.ToZodiacStringGrid(cipher.Width);
+            foreach (var line in grid)
+            {
+                Debug.WriteLine(line);
+            }
+            Assert.Equal(340, cipher.Symbols.Length);
+        }
 
-            Assert.Equal(340, cipher.GetSymbols().LongLength);
+        [Fact]
+        public void CanDecode()
+        {
+            var cipher = new Cipher340();
+            var chars = cipher.Symbols.ToZodiacChars();
+            var key = new Key408();
+            var decoded = new string(key.Decode(cipher));
         }
     }
 }

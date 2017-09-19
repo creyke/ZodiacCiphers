@@ -1,7 +1,9 @@
 ﻿namespace ZodiacCiphers
 {
-    public abstract class Cipher<TSymbolCharacters>
+    public abstract class Cipher<TSymbols>
     {
-        public abstract TSymbolCharacters[,] GetSymbols();
+        public int Width { get; protected set; }
+
+        public abstract TSymbols[] Symbols { get; protected set; }
     }
 }

@@ -9,7 +9,7 @@ namespace ZodiacCiphers.Ciphers.Tests
         {
             var cipher = new Cipher13();
 
-            Assert.Equal(13, cipher.GetSymbols().LongLength);
+            Assert.Equal(13, cipher.Symbols.Length);
         }
     }
 }

@@ -4,7 +4,6 @@
     {
         public override int[] WordTerminations => new int[]
         {
-            0
         };
 
         protected override S[,] DefineSymbolGrid()

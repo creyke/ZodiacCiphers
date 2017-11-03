@@ -24,7 +24,7 @@ namespace ZodiacCiphers.Ciphers.Tests
             var cipher = new Cipher408();
             var chars = cipher.Symbols.ToZodiacChars();
             var key = new Key408();
-            var decoded = new string(key.Decode(cipher));
+            var decoded = new string(key.DecodeWithSpaces(cipher));
             Debug.WriteLine(decoded);
         }
 

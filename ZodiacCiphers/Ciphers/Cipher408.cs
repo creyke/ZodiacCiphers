@@ -2,9 +2,15 @@
 {
     public class Cipher408 : HardcodedCipher<S>
     {
-        public override int[] WordTerminations => new int[]
+        private static readonly int s = 0;
+        private static readonly int[] Terminations = new int[]
         {
+            s+=1, s+=4, s+=7, s+=6, s+=7, s+=2, s+=2, s+=2, s+=4, s+=3, s+=2, s+=2, s+=4, s+=3, s+=4, s+=7, s+=4, s+=4,
+            s+=2, s+=3, s+=7, s+=7, s+=3, s+=2, s+=3, s+=4, s+=9, s+=6, s+=2, s+=3, s+=2, s+=4, s+=9, s+=5, s+=2, s+=3,
+            s+=4, s+=9, s+=9, s+=2, s+=2, s+=4, s+=6, s+=4, s+=7, s+=4, s+=5, s+=3
         };
+
+        public override int[] WordTerminations => Terminations;
 
         protected override S[,] DefineSymbolGrid()
         {
